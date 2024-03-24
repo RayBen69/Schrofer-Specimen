@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Knoffer-160";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-160.woff") format("woff"), url("../fonts/Knofer-160.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-80";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-80.woff") format("woff"), url("../fonts/Knofer-80.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-45";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-45.woff") format("woff"), url("../fonts/Knofer-45.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-40";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-40.woff") format("woff"), url("../fonts/Knofer-40.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-Round";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Round.woff") format("woff"), url("../fonts/Knofer-Round.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-Liquido";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Liquido.woff") format("woff"), url("../fonts/Knofer-Liquido.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JK";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/JungeKunst-Medium.woff") format("woff"), url("../fonts/JungeKunst-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-Var";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-varGX.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Knoffer-Var-02";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/KnoferVar01VF.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Knoffer-Grid";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Grid.woff") format("woff"), url("../fonts/Knofer-Grid.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-Var-Dotted";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Var-DottedVF.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Knoffer-Var-Filled-Dots";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Var-Filled-DotsVF.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Knoffer-Grid";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Outline-tight.woff") format("woff"), url("../fonts/Knofer-Outline-tight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-Dots-01";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Circles_thick.woff") format("woff"), url("../fonts/Knofer-Circles_thick.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Knoffer-Spikes";
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+  src: url("../fonts/Knofer-Circles.woff") format("woff"), url("../fonts/Knofer-Circles.woff2") format("woff2");
+}

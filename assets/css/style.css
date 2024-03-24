@@ -1,0 +1,575 @@
+/*–––––––––––––––––––––––––––––––––––*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  font-feature-settings: "kern" 1; 
+  font-kerning: normal;
+  user-select: none;
+  font-family: JK;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+}
+
+#scroll-container {
+  height: 100vh; /* Full viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  /*scroll-snap-type: y proximity; /* Enable vertical snap scrolling */
+}
+
+/*––––––––––––––––––––––––––––––––––– INFO AREA */
+
+
+.info-area-top {
+
+  width: 100%;
+  text-align: left;
+  font-family: JK;
+  font-size: 18px;
+  position: absolute;
+  top: 1px;
+  color: #ffffff;
+  border-color: #ffffff;
+  line-height: 10px; /* Center the text vertically */
+}
+
+.info-area-top .hover-line {
+  padding:8px 10px 8px 10px;
+  position:relative;
+  border-bottom: 1px solid #ffffff;
+}
+
+.info-area-top .hover-line::after {
+
+  content: attr(data-hover-content);
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding:8px 10px 8px 10px;
+  width: auto;
+}
+
+.info-area-top .hover-line:hover::after {
+  display: block;
+}
+
+.info-area-top .hover-line:hover {
+
+  background-color: #ffffff;
+  padding:8px 10px 8px 10px;
+  color: rgb(0, 0, 0);
+}
+
+/*–––––––––––––––––––––––––––––––––––*/
+
+
+.main-container {
+  display: flex; /* Use flexbox layout */
+  flex:1;
+  margin:0;
+  scroll-snap-align: start; /* Align items to the start of the scroll container */
+  position: relative;
+}
+
+.grid-container {
+  background-color: #121212;
+  height:269.3vh;
+  padding:10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.grid-container > div {
+  text-align: center; /* Center text within each item */
+}
+
+.grid-spacer {
+background-color: #121212;
+height:25vh;
+}
+
+#landing {
+  height:100vh;
+  text-align: left;
+  background-color: #121212;
+  font-family: 'Knoffer-80';
+  font-size: 11.53vw; 
+  align-items: end;
+  max-width: 100%;
+  color: rgb(255, 255, 255);
+  line-height: 106%;
+  border:none;
+}
+
+#text-schrofer-sketches {
+padding:10px;
+}
+
+
+#intro-text {
+  hyphens: auto;
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom:89vh;
+  position: sticky;
+  top: 10px;
+  text-align: justify;
+  color: #ffffff;
+  grid-column: span 2;
+  opacity: 0;
+}
+
+#intro-text-02 {
+
+  hyphens: auto;
+  margin-bottom:89vh;
+  font-size: 18px;
+  line-height: 120%;
+  position:sticky;
+  top: 10px;
+  text-align: justify;
+  color: #ffffff;
+  grid-column: span 2;
+}
+
+#intro-text-03 {
+  height:10vh;
+  font-family: "JK";
+  font-size: 18px;
+  line-height: 120%;
+  position: sticky;
+  top: 10px;
+  text-align: center;
+  color: #ffffff;
+  grid-column: span 2;
+  margin-bottom: 47.5vw;
+}
+
+#intro-text-04 {
+  height:10vh;
+  font-family: "JK";
+  font-size: 18px;
+  line-height: 120%;
+  position: sticky;
+  top: 10px;
+  text-align: center;
+  color: #ffffff;
+  grid-column: span 2;
+  margin-bottom: 79vh;
+}
+
+
+.image-01 {
+  padding:10px;
+  align-self: start;
+  position:sticky;
+  top: calc(100vh - 25vw);
+  margin-bottom:100px;
+}
+
+#grid {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 550vh;
+  text-align: center;
+}
+
+#sketch-grid-container {
+  align-content: flex-start;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(4, 1fr);
+  height:150vh;
+  max-width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #121212;
+}
+
+.column-spacer {
+  height:fit-content;
+  grid-column: span 1;
+}
+
+.sketch-grid{
+  padding-right:10px;
+  letter-spacing: -0.8vw;
+  font-family: "Knoffer-Grid";
+  font-size: 10vw; 
+  text-align: center;
+  line-height: 90%;
+  grid-column: span 4;
+  position:sticky;
+  top: 10rem;
+  opacity: 0;
+  margin-top: -60vh;
+}
+
+#change-font-container {
+  align-content: flex-start;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(4, 1fr);
+  height:150vh;
+  max-width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: #121212;
+
+}
+
+#change-font {
+  position:sticky;
+  top:9rem;
+  color: #ffffff;
+  font-family: 'Knoffer-160';
+  cursor: pointer;
+  text-align: center;
+  font-size: 48vw;
+  grid-column: span 4;
+  opacity: 0;
+  margin-top:-60vh;
+  }
+
+/*––––––––––– Typetesters ––––––––––––*/
+
+
+
+
+.custom-text { 
+  color: #ffffff;
+  background-color: transparent;
+  padding: 80px 10px 80px 10px;
+  display: block; /* Ensure it's displayed as a block element */
+  resize: none; /* Prevent resizing */
+  overflow: hidden; /* Hide any overflow content */
+  outline: none; /* Remove the default focus outline */
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-left: none;
+  border-right: none;
+  width: 100%; /* Set the width to 100% of its parent container */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#slantoutline {
+color:white;
+font-family: "Knoffer-45"; /* Change the font to your desired font */
+line-height: 101%;
+font-size: 6vw; /* Example font size in pixels */
+}
+
+
+#outline {
+  font-family: "Knoffer-80"; /* Change the font to your desired font */
+  line-height: 106%;
+    font-size: 7.6vw; /* Example font size in pixels */
+  }
+
+#regular {
+  font-family: "Knoffer-160"; /* Change the font to your desired font */
+  line-height: 116%;
+    font-size: 7.6vw; /* Example font size in pixels */
+  }
+
+
+  #liquido{
+
+    font-family: "Knoffer-liquido"; /* Change the font to your desired font */
+    line-height: 116%;
+      font-size: 4vw; /* Example font size in pixels */
+  }
+
+
+  #outoutline{
+    font-family: "Knoffer-40"; /* Change the font to your desired font */
+    line-height: 102%;
+    font-size: 5vw; /* Example font size in pixels */
+  }
+
+
+#typearea-container {
+  margin-top:80px;
+  text-align: left;
+  width: 100vw;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+#test-liquido {
+  text-align: left;
+  width: 100vw;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+#rounded {
+  width:100vw;
+  font-family: "Knoffer-Round"; /* Change the font to your desired font */
+  line-height: 116%;
+  font-size: 3.6vw; /* Example font size in pixels */
+}
+
+
+
+#test-variable {
+  margin-top: -10px;
+  cursor: pointer;
+  color: #ffffff;
+  display: flex; /* Add this to make it a flex container */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12.1vw;
+  font-family: "Knoffer-Var";
+  --weight: 200;
+  font-variation-settings: 'wght' var(--weight); /* Use CSS variable for font weight */
+  transition: font-variation-settings 0.4s ease; /* Smooth transition */
+}
+
+
+#download {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px; /* Add padding to create space between the container and the viewport edges */
+}
+
+.end-height {
+
+  height:60px;
+}
+
+#download-link {
+
+text-decoration: none;
+color:#ffffff;
+}
+
+#download-link:hover{
+color:rgb(255, 0, 149);
+}
+
+#copyright {
+  font-family: "JK";
+  font-size: 18px;
+  color: #ffffff;
+}
+
+  #test-variable:hover {
+  --weight: 300; /* Change font weight on hover */
+}
+
+
+#variable-k {
+  border-top: 1px solid #ffffff;
+  margin-top: 80px;
+  border-bottom: 1px solid #ffffff;
+  height:75vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#variable-k-02 {
+  border-top: 1px solid #ffffff;
+  margin-top: 80px;
+  border-bottom: 1px solid #ffffff;
+  height:50vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#variable-k-content {
+  border-right: 1px solid #ffffff;
+  color: #ffffff;
+  padding-top: .18em;
+  font-size: 37vw;
+  font-family: "Knoffer-Var-02";
+  --weight: 100;
+  font-variation-settings: 'wght' var(--weight); /* Use CSS variable for font weight */
+  transition: font-variation-settings 0.4s ease; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#variable-k-content-02 {
+  color: #ffffff;
+  padding-top: .18em;
+  font-size: 10vw;
+  font-family: "Knoffer-Var-Dotted";
+  --weight: 100;
+  font-variation-settings: 'wght' var(--weight); /* Use CSS variable for font weight */
+  transition: font-variation-settings 0.4s ease; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#variable-g-content {
+  color: #ffffff;
+  text-align: center;
+  font-size: 42vw;
+  padding-top: 0;
+  font-family: "Knoffer-Var";
+  --weight: 200;
+  font-variation-settings: 'wght' var(--weight); /* Use CSS variable for font weight */
+  transition: font-variation-settings 0.4s ease; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+#variable-g-content-02 {
+
+  color: #ffffff;
+  padding-top: .18em;
+  font-size: 10vw;
+  font-family: "Knoffer-Var-Filled-Dots";
+  --weight: 200;
+  font-variation-settings: 'wght' var(--weight); /* Use CSS variable for font weight */
+  transition: font-variation-settings 0.4s ease; /* Smooth transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#variable-g-content > span  {
+  margin-top: -.14em;
+}
+
+
+#variable-k-content:hover {
+
+  --weight:200;
+  color:#ffdd00;
+}
+
+#variable-g-content:hover {
+
+  --weight:300;
+  color:#ff6a00;
+}
+
+
+#variable-k-content-02:hover {
+
+  --weight:200;
+  color:#ff3700;
+}
+
+
+#variable-g-content-02:hover {
+
+  --weight:100;
+  color:#ff0059;
+}
+
+.circle { /* for sketching page*/
+  -webkit-text-stroke: 1px rgb(255, 255, 255); /* Outline effect */
+  color: #121212; /* Default color */
+  cursor: pointer;
+}
+
+.circle:hover {
+  color: rgb(200, 200, 200); /* Color on hover */
+}
+
+
+
+
+
+/*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50vw; /* Adjust based on your layout */
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 16px;
+  background: #121212;
+  outline: none;
+  position: absolute; /* Positioning relative to its parent */
+  top: -8px; /* Space from the top */
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Adjust to center properly */
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+/* Slider Thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 16px; /* Width of the thumb */
+  height: 16px; /* Height of the thumb */
+  background: #ffffff;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+  border-radius: none;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: #121212;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px; /* Width of the thumb */
+  height: 15px; /* Height of the thumb */
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+.mail-link{
+  text-decoration: none; /* Remove underline */
+  color: inherit;
+
+}
+
+.mail-link:hover {
+  color:rgb(255, 0, 149);
+}
+
+::selection {
+  background: #fff700; /* White background */
+  color:#121212; 
+}
+
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(5deg);
+  }
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
